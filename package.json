@@ -18,8 +18,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nmq/q": "^1.0.3",
+    "dotenv": "^8.0.0",
     "eslint": "^5.16.0",
-    "jest": "^23.6.0",
-    "@nmq/q": "^1.0.3"
+    "jest": "^23.6.0"
   }
 }
