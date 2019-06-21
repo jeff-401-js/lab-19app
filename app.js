@@ -7,9 +7,7 @@
 
 // const fs = require('fs');
 const utils = require('./utils.js');
-
-const io = require('socket.io-client');
-const socket = io.connect('http://localhost:3000');
+const Q = require('@nmq/q/client');
 
 /**
  * alterFile
@@ -27,14 +25,14 @@ const alterFile = (file) => {
         name: 'saved',
         data: `SAVED: event just happened!`,
       };
-      socket.emit('file-save', JSON.stringify(payload));
+      Q.publish('files', 'save', JSON.stringify(payload));
     })
     .catch(err => {
       let payload = {
         name: 'error',
         data: `ERROR: event just happened!`,
       };
-      socket.emit('file-error', JSON.stringify(payload));
+      Q.publish('files', 'error', JSON.stringify(payload));
     });
 };
 
