@@ -31,4 +31,4 @@ Q_SERVER=http://localhost:3000
 
 #### Tests
 * How do you run tests?
-none in this repo since it is all nmq commands
+* `npm test app.test.js`
