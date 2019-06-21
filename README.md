@@ -23,6 +23,7 @@ nmq
 
 #### `.env` requirements
 PORT=3000
+Q_SERVER=http://localhost:3000
 
 #### Running the app
 * `nodemon app.js`
@@ -30,4 +31,4 @@ PORT=3000
 
 #### Tests
 * How do you run tests?
-none in this repo since it is all nmq commands
+* `npm test app.test.js`
