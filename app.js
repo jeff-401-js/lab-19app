@@ -6,6 +6,7 @@
  */
 
 // const fs = require('fs');
+require('dotenv').config();
 const utils = require('./utils.js');
 const Q = require('@nmq/q/client');
 
